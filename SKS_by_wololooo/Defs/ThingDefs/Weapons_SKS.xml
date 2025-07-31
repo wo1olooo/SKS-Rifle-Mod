@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<Defs>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_SKS_wololooo</defName>
+    <label>SKS 1945</label>
+	
+    <description>The SKS is a weapon born in the quiet between two storms — not a prototype, not yet an assault rifle, but something in between. Forged in the final days of Old Earth’s second great war, it marked the fading of bolt-action doctrine and the first glimmer of the automatic age.
+
+Designed by Soviet engineer Sergei Simonov, the SKS was chambered in the then-new 7.62×39mm cartridge — smaller, lighter, more controllable. The rifle offered a ten-round internal magazine, semi-automatic fire, and rugged reliability. Not flashy, but practical. Not perfect, but trusted.
+
+By the time it entered service, Earth was already shifting. The AK-47 soon overtook it, and the SKS was pushed aside — handed to militias, parades, and forgotten garrisons. Yet it endured. Through proxy wars, revolts, and ruin, it kept firing.
+
+After Earth fell — to fire, famine, and silence — the SKS vanished like so many others. But the Rim forgets nothing.
+
+Centuries later, a degraded schematic surfaced in the memory of a dead orbital node. A weaponsmith, driven by necessity, rebuilt it — scavenged, welded, reborn. Now the SKS fires again on fractured worlds where civilization cracked and faded.
+
+It lacks full-auto. It doesn’t dazzle. But it works.
+
+A relic from the end of an age — modest in design, unshakable in legacy. Still here. Still ready.
+
+~wololooo </description>
+
+    <graphicData>
+      <texPath>Things/Equipment/wololooo_SKS</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+	
+    <soundInteract>Interact_Rifle</soundInteract>
+	
+    <recipeMaker>
+	  <recipeUsers>
+		<li>TableMachining</li>
+	  </recipeUsers>
+      <researchPrerequisite>Research_SKS_by_wololooo</researchPrerequisite>
+	  
+	  <!-- The skill requirement to craft the weapon. -->
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+	  
+	  <!-- The gun's display place. -->
+      <displayPriority>440</displayPriority>
+    </recipeMaker>
+	
+	<!-- By this, the gun also can be obtained from the quests. -->
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+	
+
+	<!-- The rifle's stats: -->
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>3.8</Mass>
+      <AccuracyTouch>0.68</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.64</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+	  <MarketValue>620</MarketValue>
+	  <MaxHitPoints>90</MaxHitPoints>
+    </statBases>
+	
+	
+	<!-- Which materials and how many of them will cost the rifle to craft: -->
+	<costList>
+	  <Steel>65</Steel>
+	  <ComponentIndustrial>2</ComponentIndustrial>
+	  <WoodLog>12</WoodLog>
+	</costList>
+	
+	<smeltable>true</smeltable>
+	<smeltProducts>
+		<Steel>37</Steel>
+	</smeltProducts>
+	
+	
+	<!-- What can be done with the rifle and how will it sound like: -->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SKS1915_762by39mm</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>30</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>wololooo_sks_firing_sound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+	
+	<!-- The weapon tags: -->
+    <weaponTags>
+      <li>SKS 1945</li>
+	  <li>wololoooSovietPack</li>
+    </weaponTags>
+	
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	
+	
+	
+	<!-- The bullet will use the gun: -->
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SKS1915_762by39mm</defName>
+    <label>7,62×39mm SKS Bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  
+      <speed>68</speed> 
+	  <stoppingPower>1.2</stoppingPower>
+	  
+	  <armorPenetrationBase>0.36</armorPenetrationBase>
+	  
+	  
+    </projectile>
+  </ThingDef>
+  
+</Defs>

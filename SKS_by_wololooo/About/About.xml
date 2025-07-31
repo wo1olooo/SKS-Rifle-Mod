@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>SKS by Wololooo</name>
+  <author>wololooo</author>
+  <packageId>wololooo.SKS</packageId>
+  
+  <description>The SKS is a weapon born in the brief silence between two global storms — not a prototype, but a transition. Designed on Old Earth in the closing days of its second great war, it marked a critical step between bolt-action relics and the automatic age to come.
+
+Developed by Soviet engineer Sergei Simonov and chambered in the emerging 7.62×39mm intermediate cartridge, the SKS was rugged, accurate, and easy to maintain. It lacked full-auto capability, but made up for it in reliability — a soldier’s rifle, built for survival more than glory.
+
+Centuries after Earth’s fall into silence, its design was recovered from a decaying memory core aboard a dead orbital station. Scattered data, rebuilt by a Rimworld weaponsmith, gave it new life.
+
+Now, the SKS serves once again — in the hands of settlers, survivalists, and militias. Not flashy. Not rare. But real.
+
+A weapon of the in-between. A rifle that never quit. Reborn from ruins — steady, silent, and ready.
+
+~wololooo
+	</description>
+	
+  <supportedVersions>
+	<li>1.6</li>
+    <li>1.5</li>
+  </supportedVersions>
+  
+  
+  <modDependencies>
+    <li>
+      <packageId>wololooo.sovietResearchTab</packageId>
+      <displayName>Soviet Rifle Research Tab</displayName>
+      <downloadUrl>https://github.com/wo1olooo/Soviet-Rifle-Research-Tab-by-Wololooo</downloadUrl>
+    </li>
+	<li>
+      <packageId>wololooo.FEDOROVAVTOMAT</packageId>
+      <displayName>Federov Avtomat</displayName>
+      <downloadUrl>https://github.com/wo1olooo/Federov-Avtomat-Rifle-Mod</downloadUrl>
+    </li>
+	
+  </modDependencies>
+  <url>https://github.com/wo1olooo/SKS-Rifle-Mod</url>
+</ModMetaData>

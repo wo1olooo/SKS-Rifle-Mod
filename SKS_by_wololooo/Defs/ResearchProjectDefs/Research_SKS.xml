@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+  
+	<!-- Naming the rifle's research etc. -->
+    <defName>Research_SKS_by_wololooo</defName>
+    <label>SKS 1945</label>
+	
+	<description>Recovered from fractured Old Earth records, the SKS was a semi-automatic carbine designed to fire the new 7.62×39mm round — a bridge between bolt-actions and the automatics to come. Simple, reliable, and built for soldiers, it served briefly before being eclipsed by the AK.
+
+After Earth fell, the SKS vanished. Centuries later, its schematic resurfaced in a dead orbital node — rebuilt by settlers on the Rim. Rough, resilient, and reborn.
+</description>
+	
+	
+	<tab>SovietGuns_by_wololooo</tab>
+	<!-- Cost and tech level. -->
+    <baseCost>2100</baseCost>
+    <techLevel>Industrial</techLevel>
+
+	<!-- The researche(s) should finished before the rifle's research. -->
+	
+	<prerequisites>
+      <li>Gunsmithing</li>
+	  <li>PrecisionRifling</li>
+	  <li>Soviet_Research_Program</li>
+	  <li>Research_FedorovAvtomat_by_wololooo</li>
+    </prerequisites>
+	
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	
+	<!-- The place of rifle's on the research menu. -->
+    <researchViewX>3</researchViewX>
+    <researchViewY>1.5</researchViewY>
+	
+
+  </ResearchProjectDef>
+
+</Defs>
